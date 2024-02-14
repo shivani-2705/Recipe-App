@@ -1,0 +1,224 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #333; /* Background color */
+  height: 70px;
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center links horizontally */
+  align-items: center; /* Center links vertically */
+}
+
+.navbar a {
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  margin: 0 20px; /* Add some space between links */
+  padding: 10px 30px; /* Add padding */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.navbar a:hover {
+  background-color: #555; /* Darken background slightly on hover */
+}
+
+.navbar a.active {
+  background-color: #555; /* Darken background for active link */
+}
+
+
+
+/* Style for authentication forms */
+.auth {
+  display: flex; /* Arrange forms side by side */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Make container fill the viewport height */
+}
+
+.auth form {
+  background-color: #fff; /* Form background color */
+  height: 60vh;
+  width: 50vh;
+  margin: 50px;
+  padding: 40px; /* Add padding */
+  border-radius: 10px; /* Add border radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  
+}
+
+.auth h2 {
+  margin-bottom: 20px; /* Add space below header */
+}
+
+.auth .form-grp {
+  margin-bottom: 20px; /* Add space between form groups */
+  
+}
+
+.auth label {
+  display: block; /* Display labels as blocks */
+  font-weight: bold; /* Make labels bold */
+}
+
+.auth input[type="text"],
+.auth input[type="password"] {
+  width: 100%; /* Set input width to fill container */
+  padding: 10px; /* Add padding */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+.auth button[type="submit"] {
+  background-color: black; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove button border */
+  padding: 10px 20px; /* Add padding */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  cursor: pointer; /* Add pointer cursor */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.auth button[type="submit"]:hover {
+  background-color: #333; /* Darken background color on hover */
+}
+
+
+.create-recipe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.create-recipe form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 500px;
+}
+
+.create-recipe h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.create-recipe label {
+  display: block;
+  font-weight: bold;
+  text-align: left;
+}
+
+.create-recipe input[type="text"],
+.create-recipe input[type="number"],
+.create-recipe textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.create-recipe textarea {
+  height: 100px;
+}
+
+.create-recipe button[type="button"] {
+  background-color: #f0f0f0; /* Light gray background */
+  color: #333; /* Dark gray text color */
+  border: none;
+  width: 400px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.create-recipe button[type="button"]:hover {
+  background-color: #ddd; /* Slightly darker gray background on hover */
+}
+
+
+.create-recipe button[type="submit"] {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.create-recipe button[type="submit"]:hover {
+  background-color: #333;
+}
+
+.recipesHome {
+  max-width: 800px; /* Adjust max-width as needed */
+  margin: 10px auto; /* Center the container horizontally */
+  padding: 20px;
+}
+
+.recipesHome h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.recipesHome ul {
+  list-style-type: none;
+   margin: 0 auto;
+}
+
+.recipesHome li {
+  width: 600px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden; /* Ensure contents don't overflow */
+  position: relative; /* Position the button */
+}
+
+.recipesHome li > div {
+  padding: 10px;
+}
+
+.recipesHome h2 {
+  margin: 0;
+}
+
+.recipesHome .instructions {
+  padding: 10px;
+}
+
+.recipesHome img {
+  width: 95%;
+  margin: 15px;
+  height: 400px; /* Adjust height as needed */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.recipesHome p {
+  margin: 0 15px ;
+}
+
+.recipesHome button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background-color: #007bff; /* Button color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.recipesHome button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
